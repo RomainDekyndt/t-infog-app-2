@@ -1,0 +1,2215 @@
+body {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet */
+  -o-user-select: none;
+  user-select: none;          
+}
+
+
+
+body {
+	font-family: "brandon-grotesque","Brandon Grotesque","BrandonGrotesque-Bold","comic sans ms", "futura-pt", "Futura Pt", "Futura","Helvetica";	
+	color: #a4a4a4;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+
+body .helpBox{
+}
+
+.blueBox {
+	position: absolute;
+	top:0;
+	right: 0;
+	height: 50px;
+	width: 100px;
+	background: #768EFF;
+	cursor: pointer;
+	z-index: 100;
+	display: none;
+	opacity: 0.1;	
+
+}
+
+.plumBox {
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 50px;
+	width: 100px;
+	background: plum;
+	cursor: pointer;
+	z-index: 10;
+	opacity: 0.2;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$nickwrap
+	$connexion
+
+____________________
+
+*/
+
+/*.nickWrap {
+	display: none;
+}*/
+
+
+input {
+    -webkit-appearance: none;
+}
+
+.nickWrap {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	-webkit-transition: all 0.3s ease-out;
+	z-index: 2;
+}
+
+.nickWrap h3 {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 17px;
+	font-weight: 700;
+	font-weight: 400;
+	color: #ff8080;
+	letter-spacing: 3px;
+}
+
+.nickWrap form {
+	position: relative;
+	width: 310px;
+	margin: 0 auto;
+	margin-top: 120px;
+}
+
+.nickWrap form label {
+	display: block;
+	font-size: 20px;
+	text-align: center;
+	color: #768eff;
+	font-size: 30px;
+}
+
+.nickWrap form input {
+	display: block;
+}
+
+.nickWrap form input.nickname {
+	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 230px;
+	height: 30px;
+	border-radius: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #fff;
+	font-size: 20px;
+	color: #768eff;
+	font-weight: 900;
+	border: 4px solid #768EFF;
+}
+
+
+.nickWrap form input.nickname::-webkit-input-placeholder {
+	color: #a4a4a4;
+	opacity: 0.7;
+
+}
+
+
+.nickWrap form input.submit-button{
+	font-family: "brandon-grotesque","Brandon Grotesque","BrandonGrotesque-Bold","comic sans ms", "futura-pt", "Futura Pt", "Futura","Helvetica";		
+	width: 230px;
+	height: 56px;
+	line-height: 65px;
+	border-radius: 60px;
+	font-weight: 700;
+	color: #fff;
+	background: #768EFF;
+	border: none;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$friendList
+
+____________________
+
+*/
+
+.friendList-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,255,0.0);
+	background: #fff;
+	font-weight: 700;
+
+}
+
+.friendList-container h3 {
+	text-align: center;
+	margin-top: 20px;
+	font-size: 17px;
+	font-weight: 400;
+	color: #ff8080;
+	letter-spacing: 3px;
+	font-weight: 700;
+
+}
+
+
+.friendList {
+	position: relative;
+	margin-top: 70px;
+	text-align: center;
+
+}
+
+
+
+
+.friendList h4 {
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: #999;
+	margin-bottom: 10px;
+	color: #768eff;
+}
+
+p.nobodyIsOnline {
+	position: absolute;
+	top: 90px;
+	text-align: center;
+	width: 200px;
+	left: calc(50% - 100px);
+	color: #bebebe;
+	font-size: 22px;
+}
+
+.friendList ul {
+	padding-top: 30px;
+	background: #fff;
+	position: relative;
+	width: 100%;
+}
+
+.friendList ul li {
+	list-style: none;
+}
+
+.friendList ul li a.userLink {
+	color: #ff8080;
+	text-decoration: none;
+	font-size: 30px;
+	line-height: 70px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$askToPlay
+
+____________________
+
+*/
+
+
+
+.askToPlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: transparent;
+	z-index: 6;
+
+
+	display: none;
+}
+
+.askToPlayBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.askToPlayWindow {
+	position: relative;
+	width: 310px;
+	padding-top: 35px;
+	padding-bottom: 30px;	
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
+	z-index: 7;
+	color: #a4a4a4;
+}
+
+
+.askToPlayWindow strong {
+	color: #ff8080;
+}
+
+
+.askToPlayWindow .askToPlayQuestion {
+	position: relative;
+	text-align: center;
+	top: 0px;
+	font-weight: 400;
+}
+
+
+.askToPlayWindow .yesToPlay,
+.askToPlayWindow .noToPlay {
+	display: block;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.askToPlayWindow .yesToPlay {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	padding-right: 19px;
+	padding-left: 19px;
+	height: 20px;
+	border-radius: 40px;
+	line-height: 28px;
+	line-height: px;
+	color: #768EFF;
+	font-size: 30px;
+
+	width: 80px;
+	border: 2px solid #f3f3f3;
+}
+.askToPlayWindow .noToPlay {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;		
+	color: #ff8080;
+	padding: 15px;
+	padding-right: 13px;
+	padding-left: 13px;
+	height: 18px;
+	line-height: 27px;
+	border-radius: 40px;
+
+	width: 80px;
+	border: 2px solid #f3f3f3;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$waitAnswerToPlay
+
+____________________
+
+*/
+
+
+
+.waitAnswerToPlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: transparent;
+	z-index: 6;
+
+	display: none;
+}
+
+.waitAnswerToPlayBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.waitAnswerToPlayWindow {
+	position: relative;
+	width: 290px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #fff;
+	color: #a4a4a4;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
+	z-index: 7;
+}
+
+.waitAnswerToPlayWindow .waitAnswerToPlayMessage {
+	text-align: center;
+	top: 0px;
+	margin-bottom: 30px;
+	font-weight: 400;
+
+}
+
+.waitAnswerToPlayMessage strong {
+	color: #ff8080;
+}
+
+
+.waitAnswerToPlayWindow .waitPoints {
+	font-weight: 900;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 5px;
+}	
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$heDeclinedToPlay
+
+____________________
+
+*/
+
+
+
+.heDeclinedToPlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: transparent;
+	z-index: 6;
+	display: none;
+}
+
+.heDeclinedToPlayBg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.heDeclinedToPlayWindow {
+	position: relative;
+	width: 290px;
+	height: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
+	z-index: 7;
+}
+
+.heDeclinedToPlayWindow .heDeclinedToPlayMessage {
+	text-align: center;
+	top: 0px;
+}
+
+.heDeclinedToPlayWindow .imSad {
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #768EFF;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/*
+____________________
+
+	$experienceChoice
+
+____________________
+
+*/
+
+
+.experienceChoice {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+
+	display: none;
+}
+
+.experienceChoiceWindow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;	
+	z-index: 3;
+}
+
+.experienceChoice h3 {
+	padding-top: 30px;
+	margin-bottom: 60px;
+	text-transform: lowercase;
+	color: #ff8080;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 3px;
+
+}
+
+ul.experiencesList {
+
+}
+
+
+ul.experiencesList li {
+	margin-bottom: 24px;
+}
+
+
+ul.experiencesList li a {
+	text-decoration: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border: 3px solid #768eff;
+	border-radius: 100px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ul.experiencesList li a h4 {
+	color: #ff8080;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+ul.experiencesList li a h5 {
+	color: #768eff;
+	font-size: 25px;
+}
+
+ul.experiencesList li.inactiveExp {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+
+        opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+________________________________________________
+
+*/
+
+
+
+
+
+
+/*
+____________________
+
+	$experience1
+
+____________________
+
+*/
+
+
+
+
+
+/*
+____________________
+
+	$tapGame
+
+____________________
+
+*/
+
+
+
+.tapGame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: #fff;
+
+	z-index: 5;
+}
+
+.tapGameWindow {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+.playingZone {
+	position: relative;
+	height: 78%;
+}
+
+.ball {
+	position: absolute;
+	top: calc(100% - 60px);
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	
+	background: black
+}
+
+
+.ballUser {
+	left: calc(50% - 10px);
+	background: #768EFF;	
+	background: url(../img/tapGame/ballUser-bg.png);
+	background-size: 100%;
+}
+
+.ballBot {
+	left: calc(50% - 50px);
+	background: #545454;
+	opacity: 0.2;
+	top: calc(100% - 60px);
+
+}
+
+
+/*
+	ballBot anim
+*/
+
+
+@-webkit-keyframes doTheRace {
+	0% {
+		top: calc(100% - 60px);
+	}
+	100% {
+		top: 0;
+
+	}
+}
+
+
+
+
+.bot-animation {
+
+	-webkit-animation-name: doTheRace;
+
+	-webkit-animation-play-state:running;
+
+
+/*	-webkit-animation-duration:5s;*/
+	
+	
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay:0s;
+/*et des nouveaux :*/
+	-webkit-animation-iteration-count:1; /*ou un nombre*/
+	-webkit-animation-direction:normal; /*ou normal, reverse, alternate, alternate-reverse*/
+	-webkit-animation-play-state:running; /*ou paused*/
+	-webkit-animation-fill-mode:backwards; /*ou backwards, both*/ /*c'est pour que ça reste après la fin de l'animation */
+
+
+/*on peut mettre tout ça sur plusieurs lignes mais ça fait beaucoup. On peut mettre les trois-quatre premières sur une seul ligne et le reste sur une autre*/
+
+}
+
+
+
+.finishLine {
+	position: absolute;
+	top: 0px;
+
+	width: 100%;
+	height: 8px;
+	background: #ff8080;
+
+}
+
+
+
+
+
+
+
+.tapZone {
+	position: absolute;
+	bottom: 1%;
+
+	height: 20%;
+	line-height: 20%;
+	text-align: center;
+	width: calc(96%);
+	left: calc(100% - 99%);
+	background: rgba(0,0,255,0.0);
+	opacity: 0.5;
+
+	border: 3px solid #ccc;
+	border-radius: 20px;
+
+	cursor: pointer;
+}
+
+
+.tapZone p {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 600%;
+	color: #aaa;
+}
+
+
+
+/*
+	launchPanel
+*/
+
+
+
+.launchPanel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	background: #fff;
+}
+
+.launchPanelWindow {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+}
+
+.rules {
+
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 17px;
+	color: #a4a4a4;
+}
+
+
+.rules .rulesTitles {
+	background: #f3f3f3;
+	width: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 35px;
+}
+
+.rules h2 {
+	text-align: center;
+	color: #ff8080;
+	padding-top: 25px;
+	text-transform: lowercase;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+
+.rules h3 {
+	text-align: center;
+	color: #768EFF;
+	font-size: 50px;
+	margin-top: 10px;	
+}
+
+.rules p {
+	line-height: 140%;
+	font-weight: 400;
+	width: 250px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+strong.strongBLue {
+	color: #768eff;
+	font-weight: 700;
+
+}
+
+
+strong.strongGrey {
+	color: #B5B5B5;
+	font-weight: 700;
+
+}
+
+
+strong.strongRed {
+	color: #ff8080;
+	font-weight: 700;
+
+}
+
+
+
+
+
+.linkToStartTheGame {
+	display: block;
+	position: relative;
+	border-radius: 220px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	width: 220px;
+	height: 55px;
+	line-height: 55px;
+	background: #CBCBCB;
+	color: #fff;
+
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	
+}
+
+.linkToStartTheGame span.tick {
+	content: "";
+	position: absolute;
+	right: 21px;
+	bottom: 16px;
+	width: 15px;
+	height: 16px;
+	background: url(../img/launchPanel/tick-blanc.svg);
+	background-size: 100%;
+	background-repeat: no-repeat; 
+	opacity: 1;
+	display: none;
+}
+
+
+
+
+p.waitingForMyPartner {
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	text-align: center;
+	color: #ff8080;
+	font-size: 15px;
+}
+
+p.waitingForMyPartner strong {
+	font-weight: inherit;
+}
+
+.waitingForMyPartner span {
+	position: relative;
+}
+
+.waitingForMyPartner span.tick {
+	content: "";
+	position: absolute;
+	right: -18px;
+	bottom: 4px;
+	width: 12px;
+	height: 10px;
+	background: url(../img/launchPanel/tick-bleu.svg);
+	background-size: 100%;
+	background-repeat: no-repeat; 
+	display: none;
+}
+
+
+
+
+
+/*
+	engGamePanel
+*/
+
+
+
+
+.endGamePanel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+	background: #fff;
+
+	display: none;
+}
+
+.endGamePanelWindow {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 6;
+}
+
+h3.congratsTitle {
+	color: #768EFF;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 160px;
+}
+
+p.congratsText {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 120%;
+}
+
+.endGamePanel a {
+	display: block;
+	text-align: center;
+}
+
+.endGamePanel a.nextGame {
+	display: block;
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	color: #768EFF;
+	border: 3px solid #768EFF;
+	border-radius: 56px;
+}
+
+
+
+.endGamePanel a.restartGame1,
+.tapGame .endGamePanel .winPanel a.restartGame {
+
+	color: #ff8080;
+	text-decoration: none;
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+
+
+
+h3.loosingTitle {
+	color: #ff8080;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 160px;
+}
+
+p.loosingText {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 120%;
+}
+
+
+
+
+.endGamePanel .loosePanel a.restartGame {
+	display: block;
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	color: #768EFF;
+	border: 3px solid #768EFF;
+	border-radius: 56px;
+}
+
+
+
+
+
+
+
+/*
+____________________
+
+	$tapGame1
+
+____________________
+
+*/
+
+.tapGame1 {
+	display: none;
+
+}
+
+.tapGame1 .ballUser {
+	left: calc(50% - 30px);
+}
+
+
+.tapGame1 .ballBot {
+	display: none;
+
+}
+
+.tapGame1 .launchPanel {
+	display: block;
+}
+
+
+
+.tapGame1 .rulesSchema {
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 65px;
+}
+
+.tapGame1 .rulesSchema h5 {
+	font-size: 25px;
+}
+
+.tapGame1 .rulesSchema img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	left: -20px;
+}
+
+.tapGame1 .rulesSchema .shemaMe {
+	color: #768eff;
+	position: relative;
+	left: 10px;
+	top: 5px;
+}
+
+.tapGame1 .rulesSchema .shemaPartner {
+	color: #ff8080;
+	text-align: left;
+	position: relative;
+	right: -150px;
+	top: -10px;
+	width: 80px;
+}
+
+
+
+.tapGame1 .endGamePanel {
+	display: none;
+}
+
+
+
+
+
+/*
+____________________
+
+	$tapGame2
+
+____________________
+
+*/
+
+.tapGame2 {
+	display: none;
+}
+
+.tapGame2 .launchPanel {
+	display: block;
+}
+
+
+
+.tapGame2 .rules p {
+	margin-top: 90px;
+}
+
+
+.ballBotRules {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 100px;
+
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	
+	background: black
+
+	left: calc(50% - 50px);
+	background: #545454;
+	opacity: 0.2;		
+}
+
+
+
+
+
+
+
+
+
+
+.tapGame2 .endGamePanel {
+	display: none;
+}
+
+.tapGame2 .endGamePanel .winPanel {
+	display: none;
+}
+
+
+.tapGame2 .endGamePanel .loosePanel {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$tapGame3
+
+____________________
+
+*/
+
+.tapGame3 {
+	display: none;
+}
+
+.tapGame3 .launchPanel {
+	display: block;
+}
+
+.tapGame3 .rules p {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+
+
+.tapGame3 .endGamePanel {
+	display: none;
+}
+
+.tapGame3 .endGamePanel .winPanel {
+	display: none;
+}
+
+
+.tapGame3 .endGamePanel .loosePanel {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$tapGame4
+
+____________________
+
+*/
+
+.tapGame4 {
+	display: none;
+}
+
+.tapGame4 .launchPanel {
+	display: block;
+}
+
+
+.tapGame4 .rules p {
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+
+.tapGame4 .endGamePanel {
+	display: none;
+}
+
+.tapGame4 .endGamePanel .winPanel {
+	display: none;
+}
+
+
+.tapGame4 .endGamePanel .loosePanel {
+	display: none;
+}
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$finalGame
+
+____________________
+
+*/
+
+
+
+.finalGame {
+	display: none;
+}
+
+.finalGame .launchPanel {
+	display: block;
+}
+
+
+.finalGame .launchPanel .rules p {
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+
+
+
+
+.finalGame .launchPanel .dontFightLink {
+	display: block;
+	position: relative;
+	border-radius: 220px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	background: #fff;
+	color: #768eff;
+	border: 3px solid #768eff;
+
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.finalGame .launchPanel .linkToStartTheGame {
+	display: block;
+	position: relative;
+	border-radius: 220px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+	width: 220px;
+	height: 55px;
+	line-height: 55px;
+	background: #fff;
+	color: #ff8080;
+	border: 3px solid #ff8080;	
+
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	text-decoration: none;
+	
+}
+
+
+
+.finalGame .stayFriendsPanel {
+	display: none;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #fff;
+	z-index: 6;
+}
+
+.finalGame .stayFriendsPanel .iRefusePanel {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+
+.finalGame .stayFriendsPanel .iRefusePanel h3 {
+	padding-top: 150px;
+	margin-bottom: 40px;
+	font-size: 35px;
+	color: #768eff;
+	text-align: center;
+}
+
+.finalGame .stayFriendsPanel .iRefusePanel p {
+	width: 280px;
+	font-family: "BrandonGrotesque-Regular";
+	line-height: 150%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.finalGame .stayFriendsPanel .iRefusePanel img.littleHeart {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	margin-bottom: 90px;
+}
+
+.finalGame .stayFriendsPanel .iRefusePanel a.linkToExp2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: center;
+	text-decoration: none;
+	color: #768eff;
+	width: 220px;
+	height: 58px;
+	line-height: 63px;
+	font-size: 22px;
+	border: 3px solid #768eff;
+	border-radius: 60px;
+	outline: none;
+}
+
+
+.finalGame .stayFriendsPanel .heRefusePanel {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+
+.finalGame .stayFriendsPanel .heRefusePanel h3 {
+	padding-top: 130px;
+	margin-bottom: 40px;
+	font-size: 35px;
+	color: #768eff;
+	text-align: center;
+}
+
+.finalGame .stayFriendsPanel .heRefusePanel p {
+	width: 280px;
+	font-weight: 400;
+	line-height: 150%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.finalGame .stayFriendsPanel .heRefusePanel img.littleHeart {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	margin-bottom: 90px;
+}
+
+
+
+.finalGame .stayFriendsPanel .heRefusePanel a.linkToExp2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: center;
+	text-decoration: none;
+	color: #768eff;
+	width: 220px;
+	height: 58px;
+	line-height: 63px;
+	font-size: 22px;
+	border: 3px solid #768eff;
+	border-radius: 60px;
+	outline: none;
+}
+
+
+.finalGame .endGamePanel {
+	display: none;
+}
+
+.finalGame .endGamePanel .winPanel {
+	display: none;
+}
+
+.finalGame .endGamePanel .winPanel p {
+	font-family: "BrandonGrotesque-Regular";
+	font-size: 20px;
+}
+
+
+.finalGame .endGamePanel .winPanel a.linkToExp2 {
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: center;
+	text-decoration: none;
+	color: #768eff;
+	width: 220px;
+	height: 58px;
+	line-height: 63px;
+	font-size: 22px;
+	border: 3px solid #768eff;
+	border-radius: 60px;
+	outline: none;
+}
+
+
+
+
+
+.finalGame .endGamePanel .loosePanel {
+	display: none;
+}
+
+
+.finalGame .endGamePanel .loosePanel p {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.finalGame .endGamePanel .loosePanel a.restartGame {
+	border-color: #ff8080;
+	color: #ff8080;
+	width: 220px;
+	line-height: 58px;
+	font-size: 22px;
+}
+
+
+
+.finalGame .endGamePanel .loosePanel a.linkToExp2 {
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto; 
+	text-align: center;
+	text-decoration: none;
+	color: #768eff;
+	width: 220px;
+	height: 52px;
+	line-height: 58px;
+	font-size: 22px;
+	border: 3px solid #768eff;
+	border-radius: 60px;
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+.ballUser1 {
+	left: calc(50% - 10px);
+	background: #768EFF;	
+}
+
+.ballUser2 {
+	left: calc(50% - 50px);
+	background: #545454;
+	opacity: 0.2;		
+}
+
+
+
+
+
+
+
+/* 
+
+________________________________________________
+
+*/
+
+
+
+
+
+/*
+____________________
+
+	$experience2
+
+____________________
+
+*/
+
+.experience2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+
+
+
+.exp2Landing {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 21;
+
+	display: block;
+}
+
+.exp2Landing h2 {
+	position: relative;
+	margin-top: 90px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #ff8080;
+}
+
+
+.exp2Landing img.littleWave {
+	margin-top: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.exp2Landing h3 {
+	position: relative;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #ff8080;
+}
+
+
+.exp2Landing p.exp2ComingSoon {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	width: 230px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 150%;
+
+}
+
+
+.exp2Landing a.linkLaunchDrawExp {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	width: 240px;
+	padding-top: 19px;
+	padding-bottom: 12px;
+	border-radius: 60px;
+	border: 3px solid #768eff;
+	background: #fff;
+	color: #768eff;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+/*
+	$drawingExperience
+*/
+
+
+
+.drawingExperience {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 20;
+
+	display: block;
+}
+
+.drawingExperienceWindow {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+a.linkToExp3 {
+	position: absolute;
+	bottom: 10%;
+	text-align: center;
+	width: 280px;
+	left: calc(50% - 140px);
+	border: 3px solid #768eff;
+	padding-top: 15px;
+	padding-bottom: 13px;
+	border-radius: 50px;
+	color: #768eff;
+	text-decoration: none;
+	background: #fff;
+	z-index: 22;
+}
+
+
+
+
+
+
+/* 
+
+________________________________________________
+
+*/
+
+
+
+
+
+
+/*
+____________________
+
+	$experience3
+
+____________________
+
+*/
+
+.experience3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+
+
+
+.exp3Landing {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #fff;
+	z-index: 21;
+
+	display: block;
+}
+
+.exp3Landing h2 {
+	position: relative;
+	margin-top: 90px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #ff8080;
+}
+
+
+.exp3Landing img.littleWave {
+	margin-top: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.exp3Landing h3 {
+	position: relative;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: #ff8080;
+}
+
+
+.exp3Landing p.exp3ComingSoon {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	width: 230px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 150%;
+
+}
+
+
+.exp3Landing a.tempoLinkToMenu {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	width: 240px;
+	padding-top: 19px;
+	padding-bottom: 12px;
+	border-radius: 60px;
+	border: 3px solid #768eff;
+	background: #fff;
+	color: #768eff;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------
+
+  
+  $media-queries 
+
+------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+@media (max-height: 570px) {
+
+
+	.rules h3 {
+		margin-top: 14px;	
+	}
+
+	.rules h2 {
+		margin-bottom: 0;
+		padding-top: 13px;	
+	}
+
+
+	.rules .rulesTitles {
+		padding-bottom: 5px;
+		margin-bottom: 25px;
+
+	}
+
+
+	.tapGame1 .rulesSchema {
+	  margin-bottom: 35px;
+	}
+
+
+
+
+
+	.linkToStartTheGame {
+		margin-top: 50px;
+
+	}
+
+
+	h3.congratsTitle {
+	  padding-top: 110px;
+	}
+
+
+
+	.endGamePanel a.nextGame {
+	  width: 250px;
+
+	}
+
+
+	h3.loosingTitle {
+		padding-top: 110px;
+	}	
+
+
+	.endGamePanel .loosePanel a.restartGame {
+		width: 250px;
+	}
+
+
+
+
+	.askToPlayWindow {
+		width: 280px;
+	}
+
+
+
+.waitAnswerToPlayWindow {
+	position: relative;
+	width: 260px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 50px;
+
+}
+
+
+
+
+
+
+	.finalGame .launchPanel .rules p {
+	  margin-top: 20px;
+	  margin-bottom: 30px;
+	}
+
+	.finalGame .launchPanel .dontFightLink {
+		margin-top: 30px;
+	}
+
+	.finalGame .launchPanel .linkToStartTheGame {
+		margin-top: 20px;
+	}
+
+
+
+	.finalGame .stayFriendsPanel .iRefusePanel h3 {
+	  padding-top: 60px;
+	  margin-bottom: 30px;
+	}
+
+
+	.finalGame .stayFriendsPanel .iRefusePanel img.littleHeart {
+	  margin-top: 40px;
+	  margin-bottom: 60px;
+	}
+
+
+.finalGame .stayFriendsPanel .heRefusePanel h3 {
+	padding-top: 40px;
+}
+
+
+.finalGame .stayFriendsPanel .heRefusePanel img.littleHeart {
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+}
+/* end max-width 570px */
+
+
+
+
+
+
+
+
+
+
+@media (max-height: 490px) {
+
+
+
+
+	.tapGame1 .rulesSchema {
+	  margin-bottom: 20px;
+	}
+
+	.linkToStartTheGame {
+		margin-top: 15px;
+
+	}
+
+
+	.tapGame2 .rules p {
+	  margin-top: 50px;
+	}
+
+
+	.ballBotRules {
+		margin-top: 10px;
+		margin-bottom: 50px;
+	}
+
+
+	h3.congratsTitle {
+	  padding-top: 60px;
+	}
+
+	.tapGame3 .rules p {
+	  margin-top: 90px;
+	  margin-bottom: 90px;
+	}
+
+
+	.tapGame4 .rules p {
+	  margin-top: 60px;
+	  margin-bottom: 60px;
+	}
+
+
+
+	.endGamePanel a.nextGame {
+	  width: 250px;
+
+	}
+
+
+
+.exp2Landing h2 {
+	margin-top: 60px;
+}
+
+.exp2Landing p.exp2ComingSoon{
+	margin-top: 60px;
+} 
+
+.exp2Landing a.linkLaunchDrawExp {
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+}
+/* end max-width 490px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+____________________
+
+	$touchExperience
+
+____________________
+
+*/
+
+
+
+.touchSurface {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: #fff;
+
+	display: none;
+	left: -100%;
+}
+
+.surfaceWindow {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 255, 0.0);
+}
+
+
+.rond {
+    width: 150px;
+    height: 150px;
+    background: url(../img/touchSurface/touchGradientBlue.png);
+    background-position: center center;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+	opacity: 1;
+	display: none;
+	z-index: 10;
+	pointer-events: none
+}
+

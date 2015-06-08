@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>moment</title>
+		<meta  charset="utf-8" />
+		
+		<link rel="icon" type="image/png" href="./images/favicon.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+
+
+
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icon/144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon/114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icon/72.png">
+        <link rel="apple-touch-icon-precomposed" href="img/icon/57.png">
+        <link rel="shortcut icon" sizes="196x196" href="img/icon/196.png">
+        <link rel="shortcut icon" href="img/icon/196.png">
+
+
+
+
+		
+
+		<!-- TYPEKIT -->
+		<script src="//use.typekit.net/oqw5fxy.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		<!-- END TYPEKIT -->
+
+
+		<!-- MOBILE -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, user-scalable=no">
+        <meta http-equiv="cleartype" content="on">
+        
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<!-- End MOBILE -->
+
+
+
+
+		<!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- End CSS -->
+	</head>
+	<body>
+        <div id="container">
+
+			<div class="helpBox blueBox"></div>
+			<!-- end blueBox -->
+			<div class="helpBox plumBox"></div>
+			<!-- end plumBox -->
+
+			
+
+
+
+			<!-- CONNEXION -->
+
+
+			<div id="nickWrap" class="nickWrap">
+				<h3>Connexion</h3>
+				<form id="setNick">
+					<label for="nickname">Je suis</label>
+					<p id="nickError"></p>
+					<input size="35" id="nickname" class="nickname" placeholder="Votre nom">
+					<input type="submit" value="Se connecter" class="submit-button">
+				</form>
+			</div>
+			<!-- end nickWrap -->
+
+
+
+
+			<!-- FRIENDLIST -->
+
+
+			<div class="friendList-container">
+					<h3>Mes amis en ligne</h3>
+				<div id="users" class="friendList">
+					<h4>Mon coéquipier sera</h4>
+						<p class="nobodyIsOnline">Aucun ami en ligne</p>
+					<ul>
+
+					</ul>
+				</div>
+				<!-- end users / friendList-->
+			</div>
+			<!-- end friendList-container -->
+
+
+
+
+
+		
+
+			<div class="askToPlay">
+				<div class="askToPlayBg"></div>
+				<!-- end askToPlayBg -->
+
+				<div class="askToPlayWindow">
+					<p class="askToPlayQuestion"><strong></strong> veut jouer avec vous</p>
+					<a href="#" class="yesToPlay">Oui</a>
+					<a href="#" class="noToPlay">Non</a>
+				</div>
+				<!-- end askToPlayWindow -->
+
+			</div>
+			<!-- end askToPlay -->
+
+
+
+			<div class="waitAnswerToPlay">
+				<div class="waitAnswerToPlayBg"></div>
+				<!-- end waitAnswerToPlayBg -->
+
+				<div class="waitAnswerToPlayWindow">
+					<p class="waitAnswerToPlayMessage">En attente de la réponse de <strong></strong></p>
+					<p class="waitPoints">...</p>
+				</div>
+				<!-- end waitAnswerToPlayWindow -->
+
+			</div>
+			<!-- end waitAnswerToPlay -->
+
+
+
+
+
+
+			<div class="heDeclinedToPlay">
+				<div class="heDeclinedToPlayBg"></div>
+				<!-- end heDeclinedToPlayBg -->
+
+				<div class="heDeclinedToPlayWindow">
+					<p class="heDeclinedToPlayMessage"><strong class="strongRed">Votre partenaire</strong> a refusé votre invitation à jouer :(</p>
+					<a href="#" class="imSad">Ok...</a>
+				</div>
+				<!-- end heDeclinedToPlayWindow -->
+
+			</div>
+			<!-- end heDeclinedToPlay -->
+
+
+
+
+
+
+
+
+
+
+			<!-- experienceChoice -->
+
+			<div class="experienceChoice">
+				<div class="experienceChoiceWindow">
+					<h3>Choix de l'expérience</h3>
+	
+					<ul class="experiencesList">
+						<li><a href="#" class="chooseExp2">
+							<h4>Expérience #1</h4>
+							<h5>Coopérer</h5>
+						</a></li>
+
+						<li><a href="#" class="chooseExp2">
+							<h4>Expérience #2</h4>
+							<h5>Dessiner</h5>
+						</a></li>
+
+						<li class="inactiveExp"><a href="#" class="chooseExp3">
+							<h4>Expérience #3</h4>
+							<h5>Aimer</h5>
+						</a></li>
+
+						<li class="inactiveExp"><a href="#" class="chooseExp4">
+							<h4>Expérience #4</h4>
+							<h5>Sonner</h5>
+						</a></li>												
+
+
+					</ul>
+
+
+
+					
+				</div>
+				<!-- end experienceChoiceWindow -->
+			</div>
+			<!-- end experienceChoice -->
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+________________________________________________
+
+ -->
+
+
+
+	<!-- experience1 -->
+
+
+
+	<div class="experience1">
+		
+
+
+
+			<div class="tapGame tapGame1">
+				<div class="launchPanel">
+					<div class="launchPanelWindow">
+						<div class="rules">
+							<div class="rulesTitles">
+								<h2>Expérience #1 - coopérer</h2>
+								<h3>Niveau 1</h3>
+							</div>
+							<!-- end rulesTitles -->
+							
+							<div class="rulesSchema">
+								<h5 class="shemaMe">Vous</h5>
+
+								<img src="img/tapGame/ballUser-bg.png" alt="balle de l'utilisateur" width="60">
+
+								<h5 class="shemaPartner">Votre partenaire</h5>
+							</div>
+							<!-- end rulesSchema -->
+
+
+							<p>Tapez tous les deux pour que votre balle atteigne <strong class="strongRed">la ligne d’arrivée</strong>.</p>
+						</div>
+						<a href="#" class="linkToStartTheGame">Lancer le jeu <span class="tick"></span></a>
+						<p class="waitingForMyPartner"><span>En attente de <strong>votre partenaire</strong><span class="tick"></span></span></p>
+					</div>
+					<!-- end launchPanelWindow -->
+					
+				</div>
+				<!-- end launchPanel -->
+				
+				
+				<div class="tapGameWindow tapGame1Window">
+					<div class="playingZone">
+						<div class="finishLine"></div>
+						<div class="ball ballUser"></div>
+						<div class="ball ballBot"></div>
+					</div>
+
+					<div class="tapZone"><p>Tap</p></div>
+				</div>
+				<!-- end tapGame1Window -->
+
+
+
+				<div class="endGamePanel">
+					<div class="endGamePanelWindow">
+						<h3 class="congratsTitle">Bravo !</h3>
+						<p class="congratsText">Cette première partie n'était pas très difficile mais vous avez l'air de former <strong>une belle équipe</strong>.</p>
+
+						<a href="#" class="nextGame">Jeu suivant</a>
+
+						<a href="#" class="restartGame restartGame1">Recommencer ce jeu</a>
+
+					</div>
+					<!-- end endGamePanelWindow -->
+					
+				</div>
+				<!-- end endGamePanel -->
+
+
+
+
+
+			</div>
+			<!-- end tapGame1 -->
+
+
+
+
+
+
+
+
+
+			<div class="tapGame tapGame2">
+				<div class="launchPanel">
+					<div class="launchPanelWindow">
+						<div class="rules">
+							<div class="rulesTitles">
+								<h2>Expérience #1 - coopérer</h2>
+								<h3>Niveau 2</h3>
+							</div>
+							<!-- end rulesTitles -->						
+							<p>Vous vous battez maintenant à deux contre <strong class="strongGrey">un robot</strong>.</p>
+							<div class="ballBotRules"></div>
+						</div>
+						<a href="#" class="linkToStartTheGame">Lancer le jeu</a>
+						<p class="waitingForMyPartner">en attente de <strong>votre partenaire</strong></p>
+					</div>
+					<!-- end launchPanelWindow -->
+					
+				</div>
+				<!-- end launchPanel -->
+				
+				
+				<div class="tapGameWindow tapGame1Window">
+					<div class="playingZone">
+						<div class="finishLine"></div>
+						<div class="ball ballUser"></div>
+						<div class="ball ballBot"></div>
+					</div>
+
+					<div class="tapZone"></div>
+				</div>
+				<!-- end tapGame1Window -->
+
+
+
+
+				<div class="endGamePanel">
+					<div class="endGamePanelWindow">
+						<div class="winPanel">
+							<h3 class="congratsTitle">Bravo !</h3>
+							<p class="congratsText">Vous avez réussi cette deuxième épreuve. Toujours plutôt facile mais ça va se corser.</p>
+
+							<a href="#" class="nextGame">Jeu suivant</a>
+
+							<a href="#" class="restartGame">Recommencer le jeu</a>
+						</div>
+						<!-- end winPanel -->
+
+						<div class="loosePanel">
+							<h3 class="loosingTitle">Désolé</h3>
+
+							<p class="loosingText">Vous avez perdu mais c’est vrai que c’était pas évident. J’imagine que vous y arriverez cette fois ci.</p>
+
+							<a href="#" class="restartGame">Réessayer</a>
+						</div>
+						<!-- end winPanel -->
+
+
+					</div>
+					<!-- end endGamePanelWindow -->
+					
+				</div>
+				<!-- end endGamePanel -->
+
+
+
+
+
+			</div>
+			<!-- end tapGame2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="tapGame tapGame3">
+				<div class="launchPanel">
+					<div class="launchPanelWindow">
+						<div class="rules">
+							<div class="rulesTitles">
+								<h2>Expérience #1 - coopérer</h2>
+								<h3>Niveau 3</h3>
+							</div>
+							<!-- end rulesTitles -->	
+
+							<p><strong class="strongGrey">Le robot</strong> va maintenant bien plus vite !</p>
+						</div>
+						<a href="#" class="linkToStartTheGame">Lancer le jeu</a>
+						<p class="waitingForMyPartner">en attente de <strong>votre partenaire</strong></p>
+					</div>
+					<!-- end launchPanelWindow -->
+					
+				</div>
+				<!-- end launchPanel -->
+				
+				
+				<div class="tapGameWindow tapGame3Window">
+					<div class="playingZone">
+						<div class="finishLine"></div>
+						<div class="ball ballUser"></div>
+						<div class="ball ballBot"></div>
+					</div>
+
+					<div class="tapZone"></div>
+				</div>
+				<!-- end tapGame3Window -->
+
+
+
+
+				<div class="endGamePanel">
+					<div class="endGamePanelWindow">
+						<div class="winPanel">
+							<h3 class="congratsTitle">Bravo !</h3>
+							<p class="congratsText">Vous avez réussi cette troisième épreuve. Et elle n'était pas facile.</p>
+
+
+							<a href="#" class="nextGame">Jeu suivant</a>
+
+							<a href="#" class="restartGame">Recommencer le jeu</a>
+						</div>
+						<!-- end winPanel -->
+
+						<div class="loosePanel">
+							<h3 class="loosingTitle">Désolé</h3>
+
+							<p class="loosingText">Vous avez perdu mais c’est vrai que c’était pas évident. J’imagine que vous y arriverez cette fois ci.</p>
+
+							<a href="#" class="restartGame">Recommencer le jeu</a>
+						</div>
+						<!-- end winPanel -->
+
+
+					</div>
+					<!-- end endGamePanelWindow -->
+					
+				</div>
+				<!-- end endGamePanel -->
+
+
+
+
+
+			</div>
+			<!-- end tapGame3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="tapGame tapGame4">
+				<div class="launchPanel">
+					<div class="launchPanelWindow">
+						<div class="rules">
+							<div class="rulesTitles">
+								<h2>Expérience #1 - coopérer</h2>
+								<h3>Niveau 4</h3>
+							</div>
+							<!-- end rulesTitles -->	
+
+							<p>La difficulté augmente encore d'un cran, il vous faudra tout donner pour battre <strong class="strongGrey">cet adversaire.</strong></p>
+						</div>
+						<a href="#" class="linkToStartTheGame">Lancer le jeu</a>
+						<p class="waitingForMyPartner">en attente de <strong>votre partenaire</strong></p>
+					</div>
+					<!-- end launchPanelWindow -->
+					
+				</div>
+				<!-- end launchPanel -->
+				
+				
+				<div class="tapGameWindow tapGame3Window">
+					<div class="playingZone">
+						<div class="finishLine"></div>
+						<div class="ball ballUser"></div>
+						<div class="ball ballBot"></div>
+					</div>
+
+					<div class="tapZone"></div>
+				</div>
+				<!-- end tapGame3Window -->
+
+
+
+
+				<div class="endGamePanel">
+					<div class="endGamePanelWindow">
+						<div class="winPanel">
+							<h3 class="congratsTitle">Bravo !</h3>
+							<p class="congratsText">Vous avez réussi le quatrième jeu. </p>
+
+
+							<a href="#" class="nextGame">Jeu suivant</a>
+
+							<a href="#" class="restartGame">Recommencer le jeu</a>
+						</div>
+						<!-- end winPanel -->
+
+						<div class="loosePanel">
+							<h3 class="loosingTitle">Désolé</h3>
+
+							<p class="loosingText">Vous avez perdu mais c’est vrai que c’était pas évident. J’imagine que vous y arriverez cette fois ci.</p>
+
+							<a href="#" class="restartGame">Recommencer le jeu</a>
+						</div>
+						<!-- end winPanel -->
+
+
+					</div>
+					<!-- end endGamePanelWindow -->
+					
+				</div>
+				<!-- end endGamePanel -->
+
+
+
+
+
+			</div>
+			<!-- end tapGame4 -->
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="tapGame finalGame">
+				<div class="launchPanel">
+					<div class="launchPanelWindow">
+						<div class="rules">
+							<div class="rulesTitles">
+								<h2>Expérience #1 - coopérer</h2>
+								<h3>Dernier jeu</h3>
+							</div>
+							<!-- end rulesTitles -->
+
+							<p>Pour le dernier jeu vous pouvez choisir d'affronter <strong class="strongRed">votre partenaire</strong>, <strong class="strongGrey">ou pas</strong>.</p>
+						</div>
+						<a href="#" class="dontFightLink">Ne pas s'affronter</a>
+						<a href="#" class="linkToStartTheGame">Lancer le jeu</a>
+						<p class="waitingForMyPartner">en attente de <strong>votre partenaire</strong></p>
+					</div>
+					<!-- end launchPanelWindow -->
+					
+				</div>
+				<!-- end launchPanel -->
+
+
+
+				<div class="stayFriendsPanel">
+					
+					<div class="iRefusePanel">
+						<h3>Bravo...</h3>
+						<p>Il faut du courage pour accepter de ne pas se battre.</p>
+						<img src="img/little-heart.png" alt="Petit coeur" width="24" class="littleHeart">
+						<a href="#" class="linkToExp2">Expérience #2</a>
+					</div>
+					<!-- end iRefusePanel -->
+
+
+					<div class="heRefusePanel">
+						<h3>Waouh</h3>
+						<p><strong class="strongRed">Votre partenaire</strong> a décidé de ne pas se battre contre vous. Prenez ça comme une marque d'amour.</p>
+						<img src="img/little-heart.png" alt="Petit coeur" width="24" class="littleHeart">
+
+						<a href="#" class="linkToExp2">Expérience #2</a>
+					</div>
+					<!-- end heRefusePanel -->
+
+
+				</div>
+				<!-- end stayFriendsPanel -->
+
+
+
+
+				
+				
+				<div class="tapGameWindow finalGameWindow">
+					<div class="playingZone">
+						<div class="finishLine"></div>
+						<div class="ball ballUser1"></div>
+						<div class="ball ballUser2"></div>
+					</div>
+
+					<div class="tapZone"></div>
+				</div>
+				<!-- end tapGame1Window -->
+
+
+
+
+				<div class="endGamePanel">
+					<div class="endGamePanelWindow">
+						<div class="winPanel">
+							<h3 class="congratsTitle">Bravo !</h3>
+							<p class="congratsText">Vous avez gagné contre <strong class="strongRed">votre partenaire</strong></p>
+
+							<a href="#" class="linkToExp2">Expérience #2</a>
+
+							<a href="#" class="restartGame">Revanche</a>
+						</div>
+						<!-- end winPanel -->
+
+						<div class="loosePanel">
+							<h3 class="loosingTitle">Désolé</h3>
+
+							<p class="loosingText">Vous avez perdu contre <strong class="strongRed">votre partenaire</strong>.</p>
+
+							<a href="#" class="restartGame">Revanche</a>
+							<a href="#" class="linkToExp2">Expérience #2</a>
+
+						</div>
+						<!-- end winPanel -->
+
+
+					</div>
+					<!-- end endGamePanelWindow -->
+					
+				</div>
+				<!-- end endGamePanel -->
+
+
+
+
+
+			</div>
+			<!-- end finalGame -->
+
+
+
+
+
+	</div>
+	<!-- end experience1 -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+________________________________________________
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- experience2 -->
+
+
+
+	<div class="experience2">
+
+		<div class="exp2Landing">
+			<h2>Expérience #2</h2>
+			<img src="img/little-wave.png" alt="Petite vaguelette" width="30" class="littleWave">
+			<h3>Libérer</h3>
+			<p class="exp2ComingSoon">Pour cette deuxième expérience, amusez vous en dessinant avec votre partenaire.</p>
+			<a href="#" class="linkLaunchDrawExp">Lancer l'expérience</a>
+		</div>
+		<!-- end exp2Landing -->
+
+
+		<div class="drawingExperience">
+			<div id="drawingExperienceWindow" class="drawingExperienceWindow">
+				<a href="#" class="linkToExp3">Expérience suivante</a>
+			</div>
+		</div>
+		<!-- end drawingExperience -->
+
+
+	</div>
+	<!-- end experience2 -->
+
+
+
+
+
+
+<!-- 
+
+________________________________________________
+
+ -->
+
+
+
+
+
+	<div class="experience3">
+
+		<div class="exp3Landing">
+			<h2>Expérience #3</h2>
+			<img src="img/little-wave.png" alt="Petite vaguelette" width="30" class="littleWave">
+			<h3>Rythmer</h3>
+			<p class="exp3ComingSoon">La troisième expérience sera bientôt disponible.</p>
+			<a href="#" class="tempoLinkToMenu">À bientôt</a>
+		</div>
+		<!-- end exp2Landing -->
+
+
+
+	</div>
+	<!-- end experience3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- touchExperience -->
+
+			<div class="rond rond1"></div>
+			<div class="rond rond2"></div>
+			<div class="rond rond3"></div>
+
+
+        </div> <!-- end container -->
+	
+
+
+		<!-- JavaScript -->
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/sketch.js"></script>
+
+		<script src="http://localhost:1337/socket.io/socket.io.js"></script>
+
+		<script src="js/main.js"></script>
+		<script src="js/client.js"></script>
+		<!-- end JavaScript -->
+	</body>
+</html>
+
+
