@@ -7,6 +7,9 @@ Lancer *server.js* (serveur NodeJS)
 
 Fonctionne sur smartphone. Émuler l’écran tactile pour un test sur desktop.
 
+Changer la valeur de la variable « speedOfMyBall » dans le fichier *client.js* pour jouer à vitesse réelle. Elle est actuellement réglée sur une vitesse plus facile pour tester l’application.
+
+
 ## Évaluation
 
 - Gestion des utilisateurs à la volée
